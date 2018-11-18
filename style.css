@@ -27,13 +27,15 @@
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 500;
-    src: url("./fonts/SpaceGrotesk-Regular.woff2"), url("./fonts/SpaceGrotesk-Regular.woff");
+    src: url("./fonts/SpaceGrotesk-Regular.woff2"),
+        url("./fonts/SpaceGrotesk-Regular.woff");
 }
 
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 900;
-    src: url("./fonts/SpaceGrotesk-Bold.woff2"), url("./fonts/SpaceGrotesk-Bold.woff");
+    src: url("./fonts/SpaceGrotesk-Bold.woff2"),
+        url("./fonts/SpaceGrotesk-Bold.woff");
 }
 
 html {
@@ -103,6 +105,8 @@ main {
     color: #000000;
     font-size: 16px;
     border-bottom: 1px solid #cccccc;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .newsletter::after {
