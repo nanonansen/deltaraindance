@@ -27,15 +27,13 @@
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 500;
-    src: url("./fonts/SpaceGrotesk-Regular.woff2"),
-        url("./fonts/SpaceGrotesk-Regular.woff");
+    src: url("./fonts/SpaceGrotesk-Regular.woff2"), url("./fonts/SpaceGrotesk-Regular.woff");
 }
 
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 900;
-    src: url("./fonts/SpaceGrotesk-Bold.woff2"),
-        url("./fonts/SpaceGrotesk-Bold.woff");
+    src: url("./fonts/SpaceGrotesk-Bold.woff2"), url("./fonts/SpaceGrotesk-Bold.woff");
 }
 
 html {
@@ -162,7 +160,7 @@ input#mc-embedded-subscribe {
     position: absolute;
     bottom: 2px;
     right: 0;
-    padding: 0 15px;
+    padding: 10px 15px;
     background: transparent;
     border: none;
     opacity: 0;
