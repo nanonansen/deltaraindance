@@ -38,7 +38,7 @@ h1 {
 }
 
 main {
-    width: 480px;
+    width: 380px;
     text-align: center;
 }
 
@@ -86,6 +86,14 @@ input:hover {
     position: absolute;
     top: 20px;
     right: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.newsletter:hover .newsletter__submit {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .links {
@@ -95,14 +103,19 @@ input:hover {
 }
 
 .links a {
-    border: 1px solid white;
+    border: 1px solid #333333;
     padding: 1rem 1rem;
     font-size: 0.8rem;
     text-transform: uppercase;
     width: 33.333%;
     margin-right: 16px;
+    transition: border-color 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .links a:last-child {
     margin-right: 0px;
+}
+
+.links a:hover {
+    border-color: #ffffff;
 }
