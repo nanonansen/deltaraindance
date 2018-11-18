@@ -139,17 +139,17 @@ input:hover {
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 .links a {
-    border: 1px solid #cccccc;
-    padding: 1rem 1rem;
+    border-bottom: 1px solid transparent;
+    margin: 1rem 2rem;
+    padding-bottom: 4px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    width: 33.333%;
-    margin-right: 16px;
+    margin-right: 0px;
     transition: border-color 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
