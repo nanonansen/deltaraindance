@@ -95,7 +95,7 @@ main {
     position: relative;
 }
 
-.newsletter input {
+.newsletter input[type="email"] {
     width: 100%;
     display: block;
     background-color: transparent;
@@ -152,6 +152,22 @@ input:hover {
 .newsletter:hover .newsletter__submit {
     opacity: 1;
     transform: scale(1) rotate(0deg);
+}
+
+.email {
+    position: relative;
+}
+
+input#mc-embedded-subscribe {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    padding: 0 15px;
+    background: transparent;
+    border: none;
+    opacity: 0;
+    width: 40px;
+    cursor: pointer;
 }
 
 .links {
