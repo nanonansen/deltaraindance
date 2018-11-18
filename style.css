@@ -27,15 +27,13 @@
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 500;
-    src: url("./fonts/SpaceGrotesk-Regular.woff2"),
-        url("./fonts/SpaceGrotesk-Regular.woff");
+    src: url("./fonts/SpaceGrotesk-Regular.woff2"), url("./fonts/SpaceGrotesk-Regular.woff");
 }
 
 @font-face {
     font-family: "Space Grotesk";
     font-weight: 900;
-    src: url("./fonts/SpaceGrotesk-Bold.woff2"),
-        url("./fonts/SpaceGrotesk-Bold.woff");
+    src: url("./fonts/SpaceGrotesk-Bold.woff2"), url("./fonts/SpaceGrotesk-Bold.woff");
 }
 
 html {
@@ -60,18 +58,23 @@ a {
     font-weight: 900;
 }
 
-h1 {
+.logo {
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(50px);
     animation-name: logoFadeIn;
     animation-duration: 2.8s;
     animation-fill-mode: forwards;
-    /* animation: fadeIn 1s cubic delay iteration-count direction fill-mode; */
+}
+
+.logo img {
+    max-width: 100%;
+    display: block;
 }
 
 main {
     text-align: center;
+    padding: 0 2rem;
 }
 
 .content {
@@ -149,11 +152,14 @@ input:hover {
 
 .links {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 
 .links a {
+    display: inline-block;
     border-bottom: 1px solid transparent;
     margin: 1rem 1rem;
     padding-bottom: 4px;
