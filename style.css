@@ -84,7 +84,9 @@ main {
 
 .newsletter {
     width: 100%;
+    max-width: 400px;
     margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
     position: relative;
 }
 
@@ -127,8 +129,8 @@ input:hover {
     position: absolute;
     top: 20px;
     right: 0;
-    opacity: 0;
-    transform: scale(0);
+    opacity: 0.3;
+    transform: scale(1);
     transition: all 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -145,17 +147,16 @@ input:hover {
 
 .links a {
     border-bottom: 1px solid transparent;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
     padding-bottom: 4px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    margin-right: 0px;
     transition: border-color 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.links a:last-child {
+/* .links a:last-child {
     margin-right: 0px;
-}
+} */
 
 .links a:hover {
     border-color: #000000;
