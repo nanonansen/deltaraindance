@@ -187,10 +187,6 @@ input#mc-embedded-subscribe {
     transition: border-color 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* .links a:last-child {
-    margin-right: 0px;
-} */
-
 .links a:hover {
     border-color: #000000;
 }
